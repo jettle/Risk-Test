@@ -1,0 +1,60 @@
+<!%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>受骗调查</title>
+
+<style type="text/css">
+   body{
+   	background-color: #5DB4BB;
+   }
+  .hh{
+    float:left;
+  }
+</style>
+</head>
+
+<body>
+	<center style="background-image: url(images/back.png);background-image: url(images/back.PNG);
+width: 50%;margin-left: 25%;height: 600px;">
+	<h1 style="padding-top: 185px;width: 320px;padding-left: 20px;"><font color="#83AA41"><img src="images/icon.PNG">个人受骗几率检测小程序:</font></h1>
+	<form action="getsData" method="post">
+		<table cellspacing="10" style="font-size: 14px;padding-left: 25px;">
+			<tr>
+				<td>性别：</td>
+				<td><input type="radio" name="sex" value="男">男</td>
+				<td><input type="radio" name="sex" value="女">女</td>
+			</tr>
+			
+			<tr>
+				<td>年龄：</td>
+				<td colspan="3"><input type="text" placeholder="请输入你的年龄" name="age"></td>
+			</tr>
+		
+			<tr>
+				<td>情绪：</td>
+				<td><input type="radio"name="emotion" value="开朗">开朗</td>
+				<td><input type="radio"name="emotion" value="害羞">害羞</td>
+				</br>
+				<td><input type="radio"name="emotion" value="冷静">冷静</td>
+			</tr>
+			
+			<tr>
+				<td>情绪：</td>
+				<td><input type="radio"name="city" value="一线城市">一线城市</td>
+				<td><input type="radio"name="city" value="二线城市">二线城市</td>
+				</br>
+				<td><input type="radio"name="city" value="三线城市">三线城市</td>
+			</tr>
+			
+			<tr>
+				<td><input type="submit" value="提交"></td>
+				<td class="hh"><input type="reset" value="撤销"></td>
+			</tr>
+		</table>
+	</form>
+	</center>
+</body>
+</html>
